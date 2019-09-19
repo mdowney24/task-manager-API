@@ -67,7 +67,7 @@ router.post('/users/logoutALL', auth, async (req, res) => {
     }
 })
 
-// ----- HTTP ENDPOINT FOR FETCHING ALL USERS -----
+// ----- HTTP ENDPOINT FOR (READING) ALL USERS -----
 router.get('/users/me', auth, async (req, res) => {
     res.send(req.user)
 })
